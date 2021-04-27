@@ -1,0 +1,63 @@
+.user-nav {
+    align-self: stretch;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+        align-self: center;
+        transition: background-color .2s;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey-light-3);
+    }
+
+    &__icon-box {
+        padding: 0 2rem;
+        position: relative;
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-grey-dark-1);
+    }
+
+    &__notification {
+        background-color: var(--color-primary);
+        border-radius: 10rem;
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        color: #fff;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__user {
+        display: flex;
+        margin-right: 2rem;
+        transition: color .2s;
+    }
+
+    &__user:hover {
+        color: var(--color-primary);
+    }
+
+    &__user-photo {
+        height: 3rem;
+        border-radius: 100px;
+        margin-right: 5px;
+    }
+}

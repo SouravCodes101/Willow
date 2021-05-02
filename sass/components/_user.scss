@@ -9,6 +9,7 @@
         display: flex;
         align-items: center;
         height: 100%;
+        width: 100%;
         cursor: pointer;
         align-self: center;
         transition: background-color .2s;
@@ -47,7 +48,7 @@
 
     &__user {
         display: flex;
-        margin-right: 2rem;
+        padding-right: 2rem;
         transition: color .2s;
     }
 

@@ -6,6 +6,11 @@
         font-weight: 300;
         font-size: 2.2rem;
         margin: 0 2rem;
+
+        @media only screen and (max-width: $bp-small) {
+           font-size: 1.8rem;
+           padding: 1.25rem 2rem; 
+         }
     }
 
     &__stars {
@@ -34,17 +39,30 @@
         display: flex;
         color: #fff;
         background-color: var(--color-primary);
-        align-items: center;
+        align-items: stretch;
         flex-direction: column;
+
+        @media only screen and (max-width: $bp-small) { font-size: 1.8rem;
+            padding: 0  1.5rem; 
+          }
     }
 
     &__rating-average {
         font-size: 1.8rem;
         margin-right: 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+          }
     }
 
     &__rating-count {
-        font-size: 1.4rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: .5rem;
+          }
     }
 }
 

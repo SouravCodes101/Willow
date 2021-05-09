@@ -2,7 +2,7 @@
     display: flex;
     flex: 0 0 20%;
     &__item {
-
+        position: relative;
     }
 
     &__photo {
@@ -10,4 +10,30 @@
         display: block;
     }
 
+}
+
+.gallery__item:hover > .gallery-caption {
+    visibility: visible;
+    opacity: 1;
+    top: 60%
+}
+
+.gallery-caption {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30%;
+    background: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.gallery-caption  span {
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
 }
